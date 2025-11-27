@@ -1,0 +1,5 @@
+def konstantin(x,y):
+    if x < y:
+        print("YES")
+    else:
+        print("NO")
