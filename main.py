@@ -1,9 +1,10 @@
-from functions import konstantin
-from functionInoyatov import inoyatov
-from functionilyasik import c2
-from function_soliyev import func_soliyev
+from functions import konstantin, inoyatov, c2, func_soliyev
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import os
 
 class TwoNumbers(BaseModel):
     x: float
@@ -20,6 +21,20 @@ docs_url="/docs",
 redoc_url="/redoc",
 #debug=settings.DEBUG, 
 )
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Serve index.html at root
+@app.get("/")
+async def serve_root():
+    return FileResponse("index.html", media_type="text/html")
 
 @app.get("/c2")
 def get_c2(x: float, y: float):
