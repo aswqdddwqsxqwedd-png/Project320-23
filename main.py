@@ -10,10 +10,10 @@ class TwoNumbers(BaseModel):
     x: float
     y: float
 
-print(inoyatov(25,5))
-print(konstantin(3,6))
-print(c2(3,4))
-print(func_soliyev(4,5))
+# print(inoyatov(25,5))
+# print(konstantin(3,6))
+# print(c2(3,4))
+# print(func_soliyev(4,5))
 
 app = FastAPI( title="EEEA", version="1.0.0",
 description="BOBA",
