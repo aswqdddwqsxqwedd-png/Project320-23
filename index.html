@@ -341,14 +341,14 @@
                     </div>
                 </div>
                 <div class="input-group">
-                    <label for="c2_x">X Value:</label>
-                    <input type="number" id="c2_x" placeholder="Enter X" step="any">
+                    <label for="c2_x">Значение X:</label>
+                    <input type="number" id="c2_x" placeholder="Введите X" step="any">
                 </div>
                 <div class="input-group">
-                    <label for="c2_y">Y Value:</label>
-                    <input type="number" id="c2_y" placeholder="Enter Y" step="any">
+                    <label for="c2_y">Значение Y:</label>
+                    <input type="number" id="c2_y" placeholder="Введите Y" step="any">
                 </div>
-                <button onclick="calculateC2()"><span>Calculate</span></button>
+                <button onclick="calculateC2()"><span>Вычислить</span></button>
                 <div class="error" id="c2_error"></div>
                 <div class="result" id="c2_result">
                     <div class="result-label">Результат</div>
@@ -366,14 +366,14 @@
                     </div>
                 </div>
                 <div class="input-group">
-                    <label for="soliyev_x">X Value:</label>
-                    <input type="number" id="soliyev_x" placeholder="Enter X" step="any">
+                    <label for="soliyev_x">Значение X:</label>
+                    <input type="number" id="soliyev_x" placeholder="Введите X" step="any">
                 </div>
                 <div class="input-group">
-                    <label for="soliyev_y">Y Value:</label>
-                    <input type="number" id="soliyev_y" placeholder="Enter Y" step="any">
+                    <label for="soliyev_y">Значение Y:</label>
+                    <input type="number" id="soliyev_y" placeholder="Введите Y" step="any">
                 </div>
-                <button onclick="calculateSoliyev()"><span>Calculate</span></button>
+                <button onclick="calculateSoliyev()"><span>Вычислить</span></button>
                 <div class="error" id="soliyev_error"></div>
                 <div class="result" id="soliyev_result">
                     <div class="result-label">Результат</div>
@@ -391,14 +391,14 @@
                     </div>
                 </div>
                 <div class="input-group">
-                    <label for="konstantin_x">X Value:</label>
-                    <input type="number" id="konstantin_x" placeholder="Enter X" step="any">
+                    <label for="konstantin_x">Значение X:</label>
+                    <input type="number" id="konstantin_x" placeholder="Введите X" step="any">
                 </div>
                 <div class="input-group">
-                    <label for="konstantin_y">Y Value:</label>
-                    <input type="number" id="konstantin_y" placeholder="Enter Y" step="any">
+                    <label for="konstantin_y">Значение Y:</label>
+                    <input type="number" id="konstantin_y" placeholder="Введите Y" step="any">
                 </div>
-                <button onclick="calculateKonstantin()"><span>Calculate</span></button>
+                <button onclick="calculateKonstantin()"><span>Вычислить</span></button>
                 <div class="error" id="konstantin_error"></div>
                 <div class="result" id="konstantin_result">
                     <div class="result-label">Результат</div>
@@ -440,14 +440,14 @@
 
             // Validate inputs
             if (x === '' || y === '') {
-                errorDiv.textContent = 'Please fill in all fields';
+                errorDiv.textContent = 'Заполните оба поля';
                 errorDiv.classList.add('show');
                 resultDiv.classList.remove('show');
                 return;
             }
 
             if (isNaN(x) || isNaN(y)) {
-                errorDiv.textContent = 'Please enter valid numbers';
+                errorDiv.textContent = 'Введите допустимые числовые значения';
                 errorDiv.classList.add('show');
                 resultDiv.classList.remove('show');
                 return;
