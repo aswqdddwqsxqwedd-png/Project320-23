@@ -12,3 +12,8 @@ def inoyatov (x,y):
 
 def c2(x,y):
     return ((x**2+y**2)**0.5)
+
+def p1(x,y):
+    return x*6+y*7
+
+
